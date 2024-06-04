@@ -1,0 +1,98 @@
+QWidget {
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+}
+
+
+QPushButton {
+    background-color: #FFF;
+    color: #333;
+    border: 2px solid #FFA500; 
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+QPushButton:hover {
+    background-color: #FFA500;
+    color: #FFF;
+}
+
+QPushButton:pressed {
+    background-color: #FF4500; 
+    color: #FFF;
+}
+
+QPushButton:disabled {
+    color: #A0A0A0; 
+    border: 2px solid #A0A0A0;
+}
+
+QProgressBar {
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+QProgressBar::chunk {
+    background-color: #FFA500;
+    border-radius: 3px;
+}
+
+
+QLineEdit {
+    border: 1px solid #ccc;
+}
+
+QLineEdit {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+
+QLabel {
+    color: #555;
+    font-weight: bold;
+}
+
+
+QMenuBar {
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+QMenu {
+    background: #fff;
+}
+
+QMenu::item:selected {
+    background: #FFA500;
+    color: #fff;
+}
+
+
+QTabBar::tab {
+    background-color: #FFF;
+    color: #333;
+    border: 2px solid #FFA500; 
+    padding: 5px;
+	font-weight: bold;
+    font-size: 14px;
+	min-width: 170px;
+	border-bottom-color: #fff;
+	border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color: #FF4500;
+    color: #FFF;
+}
+
+QTabBar::tab:selected {
+    background-color: #FFA500; 
+}

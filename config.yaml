@@ -1,0 +1,29 @@
+photonic_modes:
+  number_of_modes: 1
+  photon_energy_ev: 3.5
+  damping_ev: 0.05
+  pumping_ev: 0.0
+  strength_ev: 0.15
+  initial_photons: 0
+  file_photon_energies: data/photon_energies.txt
+  file_photon_dampings: data/photon_dampings.txt
+  file_photon_pumpings: data/photon_pumpings.txt
+  file_initial_photon_counts: data/initial_photon_counts.txt
+  file_strengths: data/strength.txt
+  
+excitonic_mode:
+  exciton_energy_ev: 3.5
+  damping_ev: 0.05
+  pumping_ev: 0.0
+  initial_excitons: 1
+  
+dynamic_configuration:
+  time_step_ps: 0.0001
+  time_end_ps: 0.5
+
+spectra_configuration:
+  min_energy_ev: 3.0
+  energy_step_ev: 0.001
+  max_energy_ev: 4.0
+
+    
