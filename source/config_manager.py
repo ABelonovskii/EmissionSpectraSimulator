@@ -9,7 +9,11 @@ class ConfigManager:
     def load_config(self):
         try:
             with open(self.config_path, 'r') as file:
-                self.config_data = yaml.safe_load(file)
+                data = yaml.safe_load(file)
+                # yaml.safe_load returns ``None`` for empty files.  The rest of
+                # the application expects ``config_data`` to be a dictionary, so
+                # ensure we always have a dict here.
+                self.config_data = data if isinstance(data, dict) else {}
         except FileNotFoundError:
             self.config_data = {}
 
